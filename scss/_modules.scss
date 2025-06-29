@@ -39,6 +39,7 @@
     @include mq(sp){
       flex-flow: column;
       row-gap: 32px;
+      margin-bottom: 24px;
     }
   }
 }

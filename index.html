@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ENQ6T45DNM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ENQ6T45DNM');
-</script>
-
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "s5wph7yxn6");
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOODEN STUDIO</title>
@@ -32,24 +14,64 @@
     <meta property="og:image" content="https://maru0724.github.io/woodenstudio/img/banner.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@c_kotoba" />
-
+    
     <!-- リセットCSS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@4.0.1/destyle.min.css">
-
+    
     <!-- Google Fonts のCSS（フォントの設定）に事前接続 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Google Fonts のフォントファイル（実データ）に事前接続 -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Googleフォント CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-
+    
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENQ6T45DNM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-ENQ6T45DNM');
+    </script>
+    
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "s5wph7yxn6");
+    </script>
 </head>
 <body>
+    <!-- モーダル -->
+    <div class="modal">
+        <div class="modal-overlay">
+            <div class="modal-container">
+                <i class="fa-solid fa-xmark close"></i>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__link"><a href="#concept">CONCEPT</a></li>
+                        <li class="nav-menu__link"><a href="#works">WORKS</a></li>
+                        <li class="nav-menu__link"><a href="#news">NEWS</a></li>
+                        <li class="nav-menu__link"><a href="#show-room">SHOW ROOM</a></li>
+                        <li class="nav-menu__link"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                    <a href="#" class="btn btn--fill">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>お問い合わせ</p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <h1>
             <img src="img/woodenStudio_logo.png" alt="WOODEN STUDIOのロゴ" class="header__logo">
@@ -305,5 +327,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>    
 <script src="js/main.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

@@ -93,26 +93,6 @@ gsap.fromTo(
             stagger:{each: 0.4}
         }
     )
-
-    gsap.fromTo(
-        ".rooms .room",
-        1.5,
-        {
-            y: 100,
-            opacity: 0
-        },
-        {
-            y: 0,
-            opacity: 1,
-            scrollTrigger:{
-                trigger: ".rooms .room",
-                start: "top center",
-                // markers: true,
-            }
-        }
-    )
-
-
 })
 // 端末の画面幅が599px以下の時(sp)
 mm.add("(max-width: 599px)",()=> {
